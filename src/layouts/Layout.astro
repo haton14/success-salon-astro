@@ -12,6 +12,10 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			href="https://fonts.googleapis.com/earlyaccess/mplus1p.css"
+			rel="stylesheet"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -20,21 +24,11 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			#da62c4 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Mplus 1p";
 		background-color: #f6f6f6;
 	}
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family: "Mplus 1p";
 	}
 </style>

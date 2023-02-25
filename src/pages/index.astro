@@ -1,15 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Top from "../components/Top.astro";
 import Card from "../components/Card.astro";
+import TopImage from "/top.png";
 ---
 
 <Layout title="美容室サクセス">
 	<main>
-		<h1><span class="text-gradient">美容室サクセス</span></h1>
-		<p class="instructions">
-			痛んでしまった髪、癖毛、パサつく髪 <br />
-			まとまらない髪で<br />&emsp;お困りの方へ
-		</p>
+		<img src={TopImage} alt="" width="800" />
+		<Top />
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://kashimashi-success.jimdofree.com/%E9%85%B8%E6%80%A7%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%83%88/"
@@ -19,22 +18,22 @@ import Card from "../components/Card.astro";
 			<Card
 				href="https://kashimashi-success.jimdofree.com/%E3%83%98%E3%83%83%E3%83%89%E3%82%B9%E3%83%91/"
 				title="ヘッドスパ"
-				body="ほにゃほにゃ"
+				body="ほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃ"
 			/>
 			<Card
 				href="https://kashimashi-success.jimdofree.com/%E3%81%BE%E3%81%A4%E6%AF%9B%E3%82%AB%E3%83%BC%E3%83%AB/"
 				title="まつ毛カール"
-				body="ほにゃほにゃ"
+				body="ほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃ"
 			/>
 			<Card
 				href="https://kashimashi-success.jimdofree.com/%E7%9D%80%E4%BB%98%E3%81%91-%E6%88%90%E4%BA%BA%E5%BC%8F/"
 				title="着付け・成人式"
-				body="ほにゃほにゃ."
+				body="ほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃ"
 			/>
 			<Card
 				href="https://kashimashi-success.jimdofree.com/menu-price/"
 				title="メニュー・値段"
-				body="ほにゃほにゃ"
+				body="ほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃほにゃ"
 			/>
 		</ul>
 	</main>
@@ -79,7 +78,7 @@ import Card from "../components/Card.astro";
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
