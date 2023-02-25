@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Top from "../components/Top.astro";
 import Card from "../components/Card.astro";
 import TopImage from "/top.png";
 ---
 
 <Layout title="美容室サクセス">
 	<main>
-		<img src={TopImage} alt="" width="800" />
-		<Top />
+		<h1><span class="text-gradient">美容室サクセス</span></h1>
+		<img src={TopImage} alt="" width="600" />
+
+		<br />
+		<br />
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://kashimashi-success.jimdofree.com/%E9%85%B8%E6%80%A7%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%83%88/"
@@ -78,7 +80,7 @@ import TopImage from "/top.png";
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
