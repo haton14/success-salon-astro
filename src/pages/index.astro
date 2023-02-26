@@ -6,7 +6,17 @@ import TopImage from "/top.png";
 
 <Layout title="美容室サクセス">
 	<main>
-		<h1><span class="text-gradient">美容室サクセス</span></h1>
+		<span class="top-content">
+			<img
+				src={TopImage}
+				alt="Before/Afterの画像"
+				width="700"
+				style="display: block; margin: auto;"
+			/>
+			<h1 class="img-text">
+				<span class="text-gradient">美容室サクセス</span>
+			</h1>
+		</span>
 
 		<br />
 		<br />
@@ -41,6 +51,18 @@ import TopImage from "/top.png";
 </Layout>
 
 <style>
+	.top-content {
+		position: relative;
+		text-align: center;
+	}
+	.img-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 24px;
+		color: white;
+	}
 	main {
 		margin: auto;
 		padding: 1.5rem;
