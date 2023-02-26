@@ -11,11 +11,9 @@ import TopImage from "/top.png";
 				src={TopImage}
 				alt="Before/Afterの画像"
 				width="100%"
-				style="display: block; margin: auto;"
+				style="display: block; margin: auto; opacity: 0.6;"
 			/>
-			<h1 class="img-text">
-				<span class="text-gradient">美容室サクセス</span>
-			</h1>
+			<h1 class="img-text">美容室サクセス</h1>
 		</span>
 
 		<br />
@@ -54,13 +52,15 @@ import TopImage from "/top.png";
 	.top-content {
 		position: relative;
 		text-align: center;
+		display: inline-block;
+		background-color: black;
 	}
 	.img-text {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 24px;
+		top: 5%;
+		left: 5%;
+		transform: translate(0%, 0%);
+		font-size: 3rem;
 		color: white;
 	}
 	main {
@@ -74,6 +74,8 @@ import TopImage from "/top.png";
 		margin: 0;
 	}
 	.text-gradient {
+		display: block;
+		width: 100ch;
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
