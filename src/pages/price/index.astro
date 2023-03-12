@@ -1,0 +1,297 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const headerCSS: string = "";
+const divCSS: string = "";
+const tableCSS: string = "table-layout: auto;";
+const tableBodyNameCSS: string = "border-bottom: 1px #808080 solid;";
+const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
+---
+
+<Layout title="美容室サクセス">
+    <main>
+        <a href="/">
+            <h3>Topへ</h3>
+        </a>
+        <h1 style={headerCSS}>メニュー・価格</h1>
+        <p>価格は全て税込みです</p>
+        <br />
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style={divCSS}>
+                <h2 style={headerCSS}>カット</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> カット</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥3,850 <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}>
+                                カット
+                                <br />
+                                【小中高校生】
+                            </td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥3,310 <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 幼児</td>
+                            <td style={tableBodyPriceCSS}> ￥2,500</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 前髪カット</td>
+                            <td style={tableBodyPriceCSS}> ￥1,100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style={divCSS}>
+                <h2 style={headerCSS}>カラー</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> カラー＋カット</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥8,800〜 <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> カラーのみ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥6,600〜 <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style={divCSS}>
+                <h2 style={headerCSS}>ストレート</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> ストレートパーマ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥9,900〜
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}>
+                                酸性ストレート
+                                <br />
+                                ショート
+                            </td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥19,800
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}>
+                                酸性ストレート
+                                <br />
+                                ミディアム
+                            </td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥22,000
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}>
+                                酸性ストレート
+                                <br />
+                                ロング
+                            </td>
+                            <td style={tableBodyPriceCSS}>
+                                <br />
+                                ￥24,200
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 縮毛矯正</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥16,500〜
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 縮毛矯正(メンズ)</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥7,700〜
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style={divCSS}>
+                <h2 style={headerCSS}>パーマ</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> パーマ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥8,800〜
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> デジタルパーマ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥13,200
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> エアーパーマ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥13,200
+                                <br />
+                                カット
+                                <br />
+                                シャンプー、ブロー込
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style={divCSS}>
+                <h2 style={headerCSS}>スパ</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> シャンプー</td>
+                            <td style={tableBodyPriceCSS}> ￥1,100</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> トリートメント</td>
+                            <td style={tableBodyPriceCSS}> ￥1,320〜</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 水のヘッドスパ</td>
+                            <td style={tableBodyPriceCSS}> ￥2,750〜 (15分)</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 無水ヘッドスパ</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥3,000 (30分)
+                                <br />
+                                ￥5,000 (60分)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style={divCSS}>
+                <h2 style={headerCSS}>セット</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> ヘアセット</td>
+                            <td style={tableBodyPriceCSS}> ￥3,850</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> メイク</td>
+                            <td style={tableBodyPriceCSS}> ￥2,200</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 着付け</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥11,000
+                                <br />
+                                振袖
+                                <br />
+                                ￥8,800
+                                <br />
+                                訪問着、留袖
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 成人式</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥22,000
+                                <br />
+                                ヘアセット
+                                <br />
+                                メイク
+                                <br />
+                                着付け
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 夏の浴衣</td>
+                            <td style={tableBodyPriceCSS}>
+                                ヘアセット（¥3,850）
+                                <br />
+                                をされた方には無料で着付けいたします
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style={divCSS}>
+                <h2 style={headerCSS}>その他</h2>
+                <table style={tableCSS}>
+                    <tbody>
+                        <tr>
+                            <td style={tableBodyNameCSS}> まつ毛カール</td>
+                            <td style={tableBodyPriceCSS}> ￥2,200</td>
+                        </tr>
+                        <tr>
+                            <td style={tableBodyNameCSS}> 眉カット</td>
+                            <td style={tableBodyPriceCSS}>
+                                ￥550
+                                <br />
+                                学生無料
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="/">
+            <h3>Topへ</h3>
+        </a>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 100ch;
+    }
+</style>
