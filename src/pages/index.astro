@@ -5,17 +5,16 @@ import TopImage from "/top.png";
 ---
 
 <Layout title="美容室サクセス">
+	<span class="top-content">
+		<img
+			src={TopImage}
+			alt="Before/Afterの画像"
+			width="100%"
+			style="display: block; margin: auto; opacity: 0.55;"
+		/>
+		<h1 class="img-text">美容室サクセス</h1>
+	</span>
 	<main>
-		<span class="top-content">
-			<img
-				src={TopImage}
-				alt="Before/Afterの画像"
-				width="100%"
-				style="display: block; margin: auto; opacity: 0.55;"
-			/>
-			<h1 class="img-text">美容室サクセス</h1>
-		</span>
-
 		<br />
 		<a href="/concept">
 			<h3>Concept</h3>
@@ -68,6 +67,7 @@ import TopImage from "/top.png";
 		font-size: 2rem;
 		color: rgb(255, 255, 255);
 	}
+
 	main {
 		margin: auto;
 		padding: 1.5rem;
