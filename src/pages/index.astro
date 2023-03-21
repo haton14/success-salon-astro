@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import TopImage from "/top.png";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="美容室サクセス">
@@ -18,13 +19,6 @@ import TopImage from "/top.png";
 		<a href="/concept">
 			<h3>Concept</h3>
 		</a>
-		<a href="/access">
-			<h3>営業時間・アクセス</h3>
-		</a>
-		<a href="https://lin.ee/uZbY0uQ">
-			<h3>LINEでの予約はこちらから</h3>
-		</a>
-
 		<ul role="list" class="link-card-grid">
 			<Card href="/price" title="メニュー・値段" body="" />
 			<Card
@@ -36,6 +30,7 @@ import TopImage from "/top.png";
 			<Card href="/eyelash" title="まつ毛カール" body="" />
 			<Card href="dressing" title="着付け・成人式" body="" />
 		</ul>
+		<Footer />
 	</main>
 </Layout>
 
