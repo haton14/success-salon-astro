@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-const headerCSS: string = "";
-const divCSS: string = "";
-const tableCSS: string = "table-layout: auto;";
-const tableBodyNameCSS: string = "border-bottom: 1px #808080 solid;";
-const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
+const divCSS: string = "width: 90%; padding: 10px;";
+const tableCSS: string = "width: 100%; border-collapse:collapse;";
+const tableBodyNameCSS: string =
+    "width: 40%; border-bottom: solid 1px; border-color: #a9a9a9; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px;";
+const tableBodyPriceCSS: string =
+    "width: 60%; border-bottom: solid 1px; border-color: #a9a9a9; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px;";
 ---
 
 <Layout title="美容室サクセス">
@@ -12,18 +13,20 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
         <a href="/">
             <h3>Topへ</h3>
         </a>
-        <h1 style={headerCSS}>メニュー・価格</h1>
+        <h2 class="h2-body">メニュー・価格</h2>
         <p>価格は全て税込みです</p>
         <br />
         <div style="display: flex; flex-wrap: wrap;">
             <div style={divCSS}>
-                <h2 style={headerCSS}>カット</h2>
+                <br />
+                <h3>カット</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
                             <td style={tableBodyNameCSS}> カット</td>
                             <td style={tableBodyPriceCSS}>
-                                ￥3,850 <br />
+                                ￥3,850
+                                <br />
                                 シャンプー、ブロー込
                             </td>
                         </tr>
@@ -50,7 +53,8 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
             <div style={divCSS}>
-                <h2 style={headerCSS}>カラー</h2>
+                <br />
+                <h3>カラー</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -71,7 +75,8 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
             <div style={divCSS}>
-                <h2 style={headerCSS}>ストレート</h2>
+                <br />
+                <h3>ストレート</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -150,9 +155,9 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                     </tbody>
                 </table>
             </div>
-
             <div style={divCSS}>
-                <h2 style={headerCSS}>パーマ</h2>
+                <br />
+                <h3>パーマ</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -189,7 +194,8 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
             <div style={divCSS}>
-                <h2 style={headerCSS}>スパ</h2>
+                <br />
+                <h3>スパ</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -216,7 +222,8 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
             <div style={divCSS}>
-                <h2 style={headerCSS}>セット</h2>
+                <br />
+                <h3>セット</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -254,7 +261,7 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                         <tr>
                             <td style={tableBodyNameCSS}> 夏の浴衣</td>
                             <td style={tableBodyPriceCSS}>
-                                ヘアセット（¥3,850）
+                                ヘアセット(¥3,850)
                                 <br />
                                 をされた方には無料で着付けいたします
                             </td>
@@ -263,7 +270,8 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
             <div style={divCSS}>
-                <h2 style={headerCSS}>その他</h2>
+                <br />
+                <h3>その他</h3>
                 <table style={tableCSS}>
                     <tbody>
                         <tr>
@@ -282,6 +290,7 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
                 </table>
             </div>
         </div>
+        <br />
         <a href="/">
             <h3>Topへ</h3>
         </a>
@@ -293,5 +302,13 @@ const tableBodyPriceCSS: string = "border-bottom: 1px #808080 solid;";
         margin: auto;
         padding: 1.5rem;
         max-width: 100ch;
+    }
+    .h2-body {
+        color: #383838;
+    }
+    .body {
+        font-size: 1rem;
+        color: #383838;
+        font-weight: bold;
     }
 </style>
