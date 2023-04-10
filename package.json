@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^6.2.2",
-		"@astrojs/sitemap": "^1.2.1",
+		"@astrojs/sitemap": "^1.2.2",
 		"astro": "^2.1.5"
 	},
 	"volta": {
