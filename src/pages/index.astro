@@ -6,62 +6,55 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="美容室success">
-	<span class="top-content">
-		<img
-			src={TopImage}
-			alt="Before/Afterの画像"
-			width="100%"
-			style="display: block; margin: auto; opacity: 0.75;"
-		/>
-		<h1 class="img-text">美容室success</h1>
-	</span>
-	<main>
-		<ul role="list" class="link-card-grid">
-			<Card href="/concept" title="Concept" body="" />
-			<Card href="/price" title="menu・price" body="" />
-			<Card
-				href="/straight"
-				title="酸性ストレート"
-				body="髪のパサつきや艶のなさを解決する、ワンランク上のストレート技術"
-			/>
-			<Card href="/head-spa" title="ヘッドスパ" body="" />
-			<Card href="/eyelash" title="まつ毛パーマ" body="" />
-			<Card href="dressing" title="着付け・成人式" body="" />
-		</ul>
-		<Footer />
-	</main>
+  <span class="top-content">
+    <img src={TopImage} alt="Before/Afterの画像" width="100%" />
+  </span>
+  <main>
+    <ul role="list" class="link-card-grid">
+      <Card href="/concept" title="Concept" body="" />
+      <Card href="/price" title="menu・price" body="" />
+      <Card
+        href="/straight"
+        title="酸性ストレート"
+        body="髪のパサつきや艶のなさを解決する、ワンランク上のストレート技術"
+      />
+      <Card href="/head-spa" title="ヘッドスパ" body="" />
+      <Card href="/eyelash" title="まつ毛パーマ" body="" />
+      <Card href="dressing" title="着付け・成人式" body="" />
+    </ul>
+    <Footer />
+  </main>
 </Layout>
 
 <style>
-	.top-content {
-		position: relative;
-		text-align: center;
-		display: inline-block;
-		background-color: black;
-	}
+  .top-content {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+  }
 
-	.img-text {
-		position: absolute;
-		top: 5%;
-		left: 5%;
-		font-size: 2rem;
-		color: rgb(255, 255, 255);
-	}
+  .img-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
 
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 100ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 100ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
