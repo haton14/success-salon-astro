@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@astrojs/cloudflare": "^6.8.0",
 		"@astrojs/sitemap": "^2.0.1",
-		"astro": "^2.10.9"
+		"astro": "^2.10.11"
 	},
 	"volta": {
 		"node": "18.14.2",
