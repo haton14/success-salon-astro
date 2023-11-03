@@ -1,64 +1,68 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/Footer.astro";
+import ComingOfAgeCeremony from "../../images/20th.avif";
+import Dressing1 from "../../images/dressing1.avif";
+import Dressing2 from "../../images/dressing2.avif";
+import Dressing3 from "../../images/dressing3.avif";
 ---
 
 <Layout title="着付け・成人式">
-    <main>
-        <a href="/">
-            <h3>Topへ</h3>
-        </a>
-        <h2 class="h2-body">着付け・成人式</h2>
-        <img
-            src="20th.avif"
-            alt="娘の成人式の画像"
-            style="display: block;"
-            width="50%"
-        />
-        <p class="body">我が家の次女です</p>
-        <br /><br />
+  <main>
+    <a href="/">
+      <h3>Topへ</h3>
+    </a>
+    <h2 class="h2-body">着付け・成人式</h2>
+    <img
+      src={ComingOfAgeCeremony.src}
+      alt="娘の成人式の画像"
+      style="display: block;"
+      width="50%"
+    />
+    <p class="body">我が家の次女です</p>
+    <br /><br />
 
-        <p class="body">
-            振袖着付け、ヘアアップ、メイク
-            <br />
-            3点セット: 22,000円(税込)
-        </p>
-        <img
-            src="dressing1.avif"
-            alt="成人式1の画像"
-            style="display: block;"
-            width="70%"
-        />
-        <br />
-        <img
-            src="dressing2.avif"
-            alt="成人式2の画像"
-            style="display: block;"
-            width="70%"
-        />
-        <br />
-        <img
-            src="dressing3.avif"
-            alt="成人式3の画像"
-            style="display: block;"
-            width="70%"
-        />
-        <br />
-        <Footer />
-    </main>
+    <p class="body">
+      振袖着付け、ヘアアップ、メイク
+      <br />
+       3点セット: 22,000円(税込)
+    </p>
+    <img
+      src={Dressing1.src}
+      alt="成人式1の画像"
+      style="display: block;"
+      width="70%"
+    />
+    <br />
+    <img
+      src={Dressing2.src}
+      alt="成人式2の画像"
+      style="display: block;"
+      width="70%"
+    />
+    <br />
+    <img
+      src={Dressing3.src}
+      alt="成人式3の画像"
+      style="display: block;"
+      width="70%"
+    />
+    <br />
+    <Footer />
+  </main>
 </Layout>
 <style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 100ch;
-    }
-    .h2-body {
-        color: #383838;
-    }
-    .body {
-        font-size: 1rem;
-        color: #383838;
-        font-weight: bold;
-    }
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 100ch;
+  }
+  .h2-body {
+    color: #383838;
+  }
+  .body {
+    font-size: 1rem;
+    color: #383838;
+    font-weight: bold;
+  }
 </style>

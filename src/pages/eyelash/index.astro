@@ -1,50 +1,52 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/Footer.astro";
+import Eyelash1 from "../../images/eyelash1.avif";
+import Eyelash2 from "../../images/eyelash2.avif";
 ---
 
 <Layout title="まつ毛パーマ">
-    <main>
-        <a href="/">
-            <h3>Topへ</h3>
-        </a>
-        <h2 class="h2-body">☆まつ毛パーマ☆</h2>
-        <p class="body">2,200円(税込)</p>
-        <img
-            src="eyelash1.avif"
-            alt="まつ毛1の画像"
-            style="display: block;"
-            width="50%"
-        />
-        <br />
-        <p class="body">
-            お客様のご希望に合わせて、お好みに応じた仕上がりを実現します。
-            <br /><br />
-            お時間は約40分程度で、手軽にご利用いただけます。
-            <br /><br />
-            サービスとして施術後は、特別な薬剤を使用し、まつ毛にハリを与え、ダメージを最小限に抑えるためにトリートメントを行っています。
-        </p>
-        <img
-            src="eyelash2.avif"
-            alt="まつ毛2の画像"
-            style="display: block;"
-            width="50%"
-        />
-        <Footer />
-    </main>
+  <main>
+    <a href="/">
+      <h3>Topへ</h3>
+    </a>
+    <h2 class="h2-body">☆まつ毛パーマ☆</h2>
+    <p class="body">2,200円(税込)</p>
+    <img
+      src={Eyelash1.src}
+      alt="まつ毛1の画像"
+      style="display: block;"
+      width="50%"
+    />
+    <br />
+    <p class="body">
+      お客様のご希望に合わせて、お好みに応じた仕上がりを実現します。
+      <br /><br />
+       お時間は約40分程度で、手軽にご利用いただけます。
+      <br /><br />
+       サービスとして施術後は、特別な薬剤を使用し、まつ毛にハリを与え、ダメージを最小限に抑えるためにトリートメントを行っています。
+    </p>
+    <img
+      src={Eyelash2.src}
+      alt="まつ毛2の画像"
+      style="display: block;"
+      width="50%"
+    />
+    <Footer />
+  </main>
 </Layout>
 <style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 100ch;
-    }
-    .h2-body {
-        color: #383838;
-    }
-    .body {
-        font-size: 1rem;
-        color: #383838;
-        font-weight: bold;
-    }
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 100ch;
+  }
+  .h2-body {
+    color: #383838;
+  }
+  .body {
+    font-size: 1rem;
+    color: #383838;
+    font-weight: bold;
+  }
 </style>
