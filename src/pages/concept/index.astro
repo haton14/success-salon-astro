@@ -3,6 +3,23 @@ import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/Footer.astro";
 import Ower from "../../images/owner.avif";
 import Staff from "../../images/staff.avif";
+import {
+  formatDuration,
+  intervalToDuration,
+  parseISO,
+  addYears,
+} from "date-fns";
+import { ja } from "date-fns/locale";
+
+const interval = {
+  start: parseISO("1998-03-14T00:00:00+09:00"), // 店のオープン日
+  end: addYears(new Date(), 1),
+};
+const duration = intervalToDuration(interval);
+const durationYears = formatDuration(duration, {
+  format: ["years"],
+  locale: ja,
+});
 ---
 
 <Layout title="Concept">
@@ -12,7 +29,9 @@ import Staff from "../../images/staff.avif";
     </a>
     <h2 class="h2-body">Concept</h2>
     <p class="body">
-      当店は、夫婦で営んで26年目を迎える美容室です。長年にわたる経験を活かし、お客様に喜んでいただけるよう、丁寧なサービスを提供しています。
+      当店は、夫婦で営んで{
+        durationYears
+      }目を迎える美容室です。長年にわたる経験を活かし、お客様に喜んでいただけるよう、丁寧なサービスを提供しています。
 
 
       <br /><br />
