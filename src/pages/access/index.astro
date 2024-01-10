@@ -1,8 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/Footer.astro";
-import Salon from "../../images/salon.avif";
-import Room from "../../images/room.avif";
 const tdStyle =
   "border: solid 1px; border-color: #d3d3d3; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px;";
 ---
@@ -35,7 +33,7 @@ const tdStyle =
           <td style={tdStyle}>
             9:00〜17:00 カラー / パーマ / ヘッドスパ
             <br />
-             9:00〜18:00 カット
+            9:00〜18:00 カット
           </td>
         </tr>
         <tr>
@@ -50,13 +48,18 @@ const tdStyle =
     </table>
     <br />
     <img
-      src={Salon.src}
+      src="https://images.success-salon.haton14.com/access/salon.avif"
       alt="店舗の外観"
       style="display: block;"
       width="100%"
     />
     <br />
-    <img src={Room.src} alt="店内の様子" style="display: block;" width="100%" />
+    <img
+      src="https://images.success-salon.haton14.com/access/room.avif"
+      alt="店内の様子"
+      style="display: block;"
+      width="100%"
+    />
     <Footer />
   </main>
 </Layout>
