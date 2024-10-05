@@ -10,12 +10,12 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^11.0.4",
+		"@astrojs/cloudflare": "^11.1.0",
 		"@astrojs/partytown": "^2.1.2",
 		"@astrojs/sitemap": "^3.1.6",
 		"@fontsource/sawarabi-gothic": "^5.1.0",
 		"astro": "^4.15.11",
-		"date-fns": "^3.6.0"
+		"date-fns": "^4.1.0"
 	},
 	"volta": {
 		"node": "20.10.0",
