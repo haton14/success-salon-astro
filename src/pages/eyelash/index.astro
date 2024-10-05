@@ -8,43 +8,46 @@ import Footer from "../../components/Footer.astro";
     <a href="/">
       <h3>Topへ</h3>
     </a>
-    <h2 class="h2-body">☆まつ毛パーマ☆</h2>
-    <p class="body">2,200円(税込)</p>
-    <img
-      src="https://images.success-salon.haton14.com/eyelash/top.avif"
-      alt="まつ毛パーマのbefore/after"
-      style="display: block;"
-      width="50%"
-    />
+    <h2 class="h2-body">＊まつ毛パーマ＊</h2>
+    <p class="body">2,200円</p>
     <br />
     <p class="body">
-      お客様のご希望に合わせて、お好みに応じた仕上がりを実現します。
-      <br /><br />
-      お時間は約40分程度で、手軽にご利用いただけます。
-      <br /><br />
-      サービスとして施術後は、特別な薬剤を使用し、まつ毛にハリを与え、ダメージを最小限に抑えるためにトリートメントを行っています。
+      当店のまつ毛パーマの、施術の流れは以下のようになっております。<br />
+      <br />
+      &emsp;1. まつ毛シャンプー<br />
+      <br />
+      &emsp;2. 施術前に特殊なトリートメントを塗布<br />
+      &emsp;（ウェーブ保持力UP➕しっかりリッジ）<br />
+      <br />
+      &emsp;3. まつ毛パーマ<br />
+      <br />
+      &emsp;4. 薬剤除去<br />
+      <br />
+      &emsp;5. まつ毛の引き締め<br />
+      <br />
+      &emsp;6. まつ毛のpHを整えて、最後に美容液を塗布<br />
+      <br />
+      施術全体のお時間は1時間ほどです。<br />
+      お好みに応じて対応いたしております。<br />
+      長持ちすると好評のまつ毛パーマをぜひお試しください。<br />
+      <br />
     </p>
-    <img
-      src="https://images.success-salon.haton14.com/eyelash/eyelash1.avif"
-      alt="まつ毛パーマ1の画像"
-      style="display: block;"
-      width="50%"
-    />
-    <img
-      src="https://images.success-salon.haton14.com/eyelash/eyelash2.avif"
-      alt="まつ毛パーマ2の画像"
-      style="display: block;"
-      width="50%"
-    />
-    <img
-      src="https://images.success-salon.haton14.com/eyelash/eyelash3.avif"
-      alt="まつ毛パーマ3の画像"
-      style="display: block;"
-      width="50%"
-    />
+    <div class="image-container">
+      <img
+        src="https://images.success-salon.haton14.com/eyelash/eyelash-sample-1.avif"
+        alt="まつ毛パーマのサンプル1"
+        width="45%"
+      />
+      <img
+        src="https://images.success-salon.haton14.com/eyelash/eyelash-sample-2.avif"
+        alt="まつ毛パーマのサンプル2"
+        width="45%"
+      />
+    </div>
     <Footer />
   </main>
 </Layout>
+
 <style>
   main {
     margin: auto;
@@ -58,5 +61,15 @@ import Footer from "../../components/Footer.astro";
     font-size: 1rem;
     color: #383838;
     font-weight: bold;
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .image-container img {
+    display: block;
+    margin: 0 auto;
   }
 </style>
