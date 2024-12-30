@@ -13,7 +13,7 @@
 		"@astrojs/cloudflare": "^11.2.0",
 		"@astrojs/partytown": "^2.1.2",
 		"@astrojs/sitemap": "^3.2.1",
-		"@fontsource/sawarabi-gothic": "^5.1.0",
+		"@fontsource/sawarabi-gothic": "^5.1.1",
 		"astro": "^4.16.16",
 		"date-fns": "^4.1.0"
 	},
