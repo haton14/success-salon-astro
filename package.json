@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^12.2.3",
-		"@astrojs/partytown": "^2.1.3",
+		"@astrojs/partytown": "^2.1.4",
 		"@astrojs/sitemap": "^3.2.1",
 		"@fontsource/sawarabi-gothic": "^5.2.5",
 		"astro": "^5.4.1",
