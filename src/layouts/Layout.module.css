@@ -1,0 +1,18 @@
+.html {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  background-color: #f6f6f6;
+}
+
+.body {
+  margin: 0;
+  color: #383838;
+}
+
+.code {
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.link {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
