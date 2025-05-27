@@ -1,0 +1,42 @@
+const Footer = () => {
+  return (
+    <>
+      <hr />
+      <h2>ご予約はこちらから</h2>
+      <a href="tel:0299-69-7700">
+        <h3>☎︎ 0299-69-7700</h3>
+      </a>
+      <a href="https://lin.ee/uZbY0uQ">
+        <img
+          src="https://images.success-salon.haton14.com/LOA_logo_1_green_JP.svg"
+          alt="予約用の店舗公式LINE"
+          width="200"
+        />
+      </a>
+      <br />
+      <hr />
+      <h2>SNS</h2>
+      <a href="https://ameblo.jp/success7700/">
+        <h3>店舗ブログ</h3>
+      </a>
+      <a href="https://www.instagram.com/7700success">
+        <img
+          src="https://images.success-salon.haton14.com/Instagram_Glyph_Gradient.svg"
+          alt="店舗インスタへのリンク"
+          width="50"
+        />
+      </a>
+      <br />
+      <hr />
+      <a href="/access">
+        <h3>営業時間・アクセス</h3>
+      </a>
+      <a href="/">
+        <h3>Topへ</h3>
+      </a>
+      <br />
+    </>
+  );
+};
+
+export default Footer;
