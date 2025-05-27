@@ -11,7 +11,19 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  adapter: cloudflare(),
+  adapter: cloudflare({
+      imageService: 'cloudflare'
+  }),
+  vite: {
+    ssr: {
+      external: [
+        "node:fs/promises",
+        "node:path",
+        "node:url",
+        "node:crypto"
+      ]
+    }
+  },
   site: "https://success-salon.haton14.com",
   integrations: [
     sitemap({
