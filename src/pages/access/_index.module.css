@@ -1,0 +1,16 @@
+.main {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 100ch;
+  color: #383838;
+}
+
+.h2Body {
+  color: #383838;
+}
+
+.body {
+  font-size: 1rem;
+  color: #383838;
+  font-weight: bold;
+}
