@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             .desktop-nav { display: flex !important; }
         }
     </style>
@@ -22,20 +22,20 @@
                 <div class="flex items-center">
                     <h1 class="text-2xl font-bold text-blue-900">美容室success</h1>
                 </div>
-                <div class="desktop-nav items-center space-x-6" style="display: none;">
-                    <a href="#concept" class="text-gray-700 hover:text-blue-800 transition">私たちについて</a>
-                    <a href="#menu" class="text-gray-700 hover:text-blue-800 transition">料金</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="/pages/perm.html" class="text-gray-700 hover:text-blue-800 transition">パーマ</a>
-                    <a href="/pages/sins.html" class="text-gray-700 hover:text-blue-800 transition">sins酸性ストレート</a>
-                    <a href="/pages/eyelash.html" class="text-gray-700 hover:text-blue-800 transition">まつ毛</a>
-                    <a href="/pages/kimono.html" class="text-gray-700 hover:text-blue-800 transition">着付け</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="/pages/staff.html" class="text-gray-700 hover:text-blue-800 transition">スタッフ</a>
+                <div class="desktop-nav items-center space-x-3 xl:space-x-6" style="display: none;">
+                    <a href="#concept" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">私たちについて</a>
+                    <a href="#menu" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">料金</a>
+                    <span class="text-gray-400 hidden lg:inline">|</span>
+                    <a href="/pages/perm.html" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">パーマ</a>
+                    <a href="/pages/sins.html" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">sins酸性ストレート</a>
+                    <a href="/pages/eyelash.html" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">まつ毛</a>
+                    <a href="/pages/kimono.html" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">着付け</a>
+                    <span class="text-gray-400 hidden lg:inline">|</span>
+                    <a href="/pages/staff.html" class="text-gray-700 hover:text-blue-800 transition text-sm lg:text-base">スタッフ</a>
                     <a href="#contact"
-                        class="bg-gradient-to-b from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full font-bold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 border border-blue-800">ご予約</a>
+                        class="bg-gradient-to-b from-blue-600 to-blue-700 text-white px-3 lg:px-4 py-2 rounded-full font-bold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 border border-blue-800 text-sm lg:text-base">ご予約</a>
                 </div>
-                <button class="md:hidden" id="menuToggle">
+                <button class="lg:hidden" id="menuToggle">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
@@ -44,7 +44,7 @@
             </div>
         </nav>
         <!-- モバイルメニュー -->
-        <div class="hidden md:hidden bg-white border-t" id="mobileMenu">
+        <div class="hidden lg:hidden bg-white border-t" id="mobileMenu">
             <div class="px-4 py-4 space-y-3">
                 <div class="pb-2 border-b border-gray-200">
                     <a href="#concept" class="block text-gray-700 hover:text-blue-800">私たちについて</a>
