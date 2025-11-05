@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sections = document.querySelectorAll('section')
   sections.forEach(section => {
-    section.style.opacity = '0'
+    section.style.opacity = '0.3'
     section.style.transform = 'translateY(20px)'
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
     fadeInObserver.observe(section)
