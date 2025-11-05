@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ストレート・縮毛矯正 | 美容室success</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-900">美容室success</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-700 hover:text-blue-800 transition">ホーム</a>
+                    <a href="/pages/straight.html" class="text-blue-800 font-semibold">ストレート</a>
+                    <a href="/pages/perm.html" class="text-gray-700 hover:text-blue-800 transition">パーマ</a>
+                    <a href="/pages/sins.html" class="text-gray-700 hover:text-blue-800 transition">sins酸性ストレート</a>
+                    <a href="/pages/staff.html" class="text-gray-700 hover:text-blue-800 transition">スタッフ</a>
+                    <a href="/pages/eyelash.html" class="text-gray-700 hover:text-blue-800 transition">まつ毛パーマ</a>
+                    <a href="/pages/kimono.html" class="text-gray-700 hover:text-blue-800 transition">着付け</a>
+                    <a href="/#contact" class="bg-gradient-to-b from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full font-bold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 border border-blue-800">ご予約</a>
+                </div>
+                <button class="md:hidden" id="menuToggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">ストレート・縮毛矯正メニュー</h1>
+                <p class="text-lg text-gray-600">あなたの髪質とお悩みに合わせた最適な施術をご提案</p>
+                <div class="w-24 h-1 bg-blue-800 mx-auto mt-4"></div>
+            </div>
+
+            <!-- メニューカード -->
+            <div class="grid gap-8 max-w-6xl mx-auto">
+                
+                <!-- sins 酸性ストレート -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+                        <h2 class="text-2xl font-bold flex items-center">
+                            <span class="bg-white/20 rounded-lg px-3 py-1 mr-3">おすすめ</span>
+                            sins 酸性ストレート
+                        </h2>
+                        <p class="mt-2 opacity-90">髪へのダメージを最小限に抑えた最新技術</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-blue-900">こんな方におすすめ</h3>
+                                <ul class="space-y-2 text-gray-700 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        縮毛矯正を繰り返して髪が傷んだ方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        自然な仕上がりを求める方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        ハリと艶のある髪質になりたい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        ブリーチ毛・ハイダメージ毛の方
+                                    </li>
+                                </ul>
+                                <div class="bg-blue-50 rounded-xl p-4">
+                                    <p class="text-sm text-blue-800 font-semibold mb-2">施術時間：約3〜4時間</p>
+                                    <p class="text-sm text-gray-600">持続期間：4〜6ヶ月</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-blue-900">料金</h3>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">ショート</span>
+                                        <span class="font-bold text-xl text-blue-900">¥19,800</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">ミディアム</span>
+                                        <span class="font-bold text-xl text-blue-900">¥22,000</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">ロング</span>
+                                        <span class="font-bold text-xl text-blue-900">¥24,200</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500">※カット・シャンプー・ブロー込み</p>
+                                <a href="/pages/sins.html" class="mt-4 block text-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+                                    詳しく見る →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 縮毛矯正 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-white">
+                        <h2 class="text-2xl font-bold">縮毛矯正</h2>
+                        <p class="mt-2 opacity-90">頑固なクセもしっかりストレートに</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-purple-900">こんな方におすすめ</h3>
+                                <ul class="space-y-2 text-gray-700 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        強いクセをしっかり伸ばしたい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        毎朝のスタイリング時間を短縮したい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        湿気による広がりを抑えたい方
+                                    </li>
+                                </ul>
+                                <div class="bg-purple-50 rounded-xl p-4">
+                                    <p class="text-sm text-purple-800 font-semibold mb-2">施術時間：約3〜3.5時間</p>
+                                    <p class="text-sm text-gray-600">持続期間：半永久的（伸びた部分は再施術が必要）</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-purple-900">料金</h3>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">レギュラー</span>
+                                        <span class="font-bold text-xl text-purple-900">¥16,500〜</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">メンズ</span>
+                                        <span class="font-bold text-xl text-purple-900">¥7,700〜</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">前髪のみ</span>
+                                        <span class="font-bold text-xl text-purple-900">¥5,500</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500">※カット・シャンプー・ブロー込み</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ストレートパーマ -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-teal-600 to-teal-700 p-6 text-white">
+                        <h2 class="text-2xl font-bold">ストレートパーマ</h2>
+                        <p class="mt-2 opacity-90">自然なストレートヘアを実現</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-teal-900">こんな方におすすめ</h3>
+                                <ul class="space-y-2 text-gray-700 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        軽いクセやうねりを落ち着かせたい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        ボリュームを抑えたい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        パーマを取りたい方
+                                    </li>
+                                </ul>
+                                <div class="bg-teal-50 rounded-xl p-4">
+                                    <p class="text-sm text-teal-800 font-semibold mb-2">施術時間：約2〜2.5時間</p>
+                                    <p class="text-sm text-gray-600">持続期間：3〜4ヶ月</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-teal-900">料金</h3>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">全体</span>
+                                        <span class="font-bold text-xl text-teal-900">¥9,900〜</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">ポイント</span>
+                                        <span class="font-bold text-xl text-teal-900">¥6,600〜</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500">※カット・シャンプー・ブロー込み</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ケラチントリートメント -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                    <div class="bg-gradient-to-r from-pink-600 to-pink-700 p-6 text-white">
+                        <h2 class="text-2xl font-bold">ケラチントリートメント</h2>
+                        <p class="mt-2 opacity-90">髪質改善しながらクセを抑える</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-pink-900">こんな方におすすめ</h3>
+                                <ul class="space-y-2 text-gray-700 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        髪のダメージが気になる方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        艶とまとまりが欲しい方
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        軽いクセを落ち着かせたい方
+                                    </li>
+                                </ul>
+                                <div class="bg-pink-50 rounded-xl p-4">
+                                    <p class="text-sm text-pink-800 font-semibold mb-2">施術時間：約2時間</p>
+                                    <p class="text-sm text-gray-600">持続期間：2〜3ヶ月</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-4 text-pink-900">料金</h3>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="text-gray-700 font-medium">ケラチントリートメント</span>
+                                        <span class="font-bold text-xl text-pink-900">¥8,800</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500">※シャンプー・ブロー込み</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 text-center">
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">どのメニューが最適か分からない？</h3>
+                    <p class="text-gray-600 mb-6">お客様の髪質やお悩みに合わせて、最適なメニューをご提案いたします。<br>まずはお気軽にご相談ください。</p>
+                    <a href="/#contact" class="inline-block bg-gradient-to-b from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-blue-800">
+                        ご予約・ご相談はこちら
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; 2024 美容室success. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
