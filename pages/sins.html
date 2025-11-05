@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sins酸性ストレート | 美容室success</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/index.html" class="text-2xl font-bold text-blue-900">美容室success</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html#concept" class="text-gray-700 hover:text-blue-800 transition">About</a>
+                    <a href="/index.html#menu" class="text-gray-700 hover:text-blue-800 transition">menu・price</a>
+                    <a href="/pages/sins.html" class="bg-blue-800 text-white px-4 py-2 rounded-full font-bold">sins 酸性ストレート</a>
+                    <a href="/pages/staff.html" class="text-gray-700 hover:text-blue-800 transition">スタッフ</a>
+                    <a href="/pages/eyelash.html" class="text-gray-700 hover:text-blue-800 transition">まつ毛パーマ</a>
+                    <a href="/pages/kimono.html" class="text-gray-700 hover:text-blue-800 transition">着付け</a>
+                </div>
+                <button class="md:hidden" id="menuToggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="pt-20 pb-12 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">sins 酸性ストレート</h1>
+                <p class="text-xl text-gray-700 mb-8">髪に優しい、新しいストレート技術</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">従来の縮毛矯正との違い</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-red-50 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-red-800 mb-4">❌ 従来の縮毛矯正</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li>• アルカリ剤でキューティクルを開く</li>
+                            <li>• 髪への負担が大きい</li>
+                            <li>• 針金のような不自然な仕上がり</li>
+                            <li>• 繰り返すと髪が傷む</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">✅ sins酸性ストレート</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li>• 酸性薬剤でキューティクルを守る</li>
+                            <li>• 髪への負担を最小限に</li>
+                            <li>• 自然で柔らかな仕上がり</li>
+                            <li>• トリートメント効果で髪質改善</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 施術の流れ -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">施術の流れ</h2>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-blue-800 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">カウンセリング</h3>
+                            <p class="text-gray-700">髪質や理想のスタイルをお伺いし、最適な施術プランをご提案します。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-blue-800 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">薬剤塗布</h3>
+                            <p class="text-gray-700">髪に優しい酸性薬剤を丁寧に塗布。キューティクルを守りながら施術します。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-blue-800 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">アイロンワーク</h3>
+                            <p class="text-gray-700">熟練の技術で丁寧にアイロンを施し、自然なストレートヘアに仕上げます。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-6">
+                        <div class="w-12 h-12 bg-blue-800 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">トリートメント</h3>
+                            <p class="text-gray-700">仕上げのトリートメントで髪に栄養を与え、艶やかな仕上がりに。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-blue-50 rounded-xl p-6">
+                    <p class="text-blue-900 font-semibold">施術時間：約3〜4時間（髪の長さや状態により異なります）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">料金</h2>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                    <div class="space-y-4">
+                        <div class="flex justify-between pb-3 border-b">
+                            <span class="text-lg">ショート</span>
+                            <span class="text-xl font-bold text-blue-900">¥19,800</span>
+                        </div>
+                        <div class="flex justify-between pb-3 border-b">
+                            <span class="text-lg">ミディアム</span>
+                            <span class="text-xl font-bold text-blue-900">¥22,000</span>
+                        </div>
+                        <div class="flex justify-between pb-3">
+                            <span class="text-lg">ロング</span>
+                            <span class="text-xl font-bold text-blue-900">¥24,200</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-6">※シャンプー・ブロー・カット込み</p>
+                    <p class="text-sm text-gray-500">※前髪のみの施術も承っております（要相談）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">ご予約・お問い合わせ</h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                <a href="tel:0299697700" class="bg-gradient-to-b from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-blue-800">
+                    0299-69-7700
+                </a>
+                <a href="https://lin.ee/YOUR_LINE_ID" target="_blank" class="bg-gradient-to-b from-green-500 to-green-600 text-white px-8 py-4 rounded-xl font-bold text-xl hover:from-green-600 hover:to-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-green-700">
+                    LINEから予約
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4">美容室SUCCESS</h2>
+                <p class="text-gray-400 mb-4">〒314-0042 茨城県鹿嶋市小山1072-88</p>
+                <p class="text-gray-400 mb-4">TEL: 0299-69-7700</p>
+                <div class="border-t border-gray-800 mt-8 pt-8">
+                    <p class="text-sm text-gray-400">© 2024 美容室SUCCESS. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
