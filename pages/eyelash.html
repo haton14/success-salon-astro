@@ -6,6 +6,11 @@
     <title>まつ毛パーマ | 美容室success</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (min-width: 768px) {
+            .desktop-nav { display: flex !important; }
+        }
+    </style>
 </head>
 <body>
     <!-- ヘッダー -->
@@ -15,7 +20,7 @@
                 <div class="flex items-center">
                     <a href="/index.html" class="text-2xl font-bold text-blue-900">美容室success</a>
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
+                <div class="desktop-nav items-center space-x-6" style="display: none;">
                     <a href="/index.html" class="text-gray-700 hover:text-blue-800 transition">トップ</a>
                     <span class="text-gray-400">|</span>
                     <a href="/pages/straight.html" class="text-gray-700 hover:text-blue-800 transition">ストレート</a>
